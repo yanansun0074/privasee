@@ -1,0 +1,107 @@
+{% extends "base.html" %} 
+{% block title %} PrivaSee {% endblock %}
+
+{% load static %}
+
+<link href = "{% static '/css/main.css' %}" rel = "stylesheet" type="text/css">
+
+{% block content %}
+<div class="section-1">
+    <div class="text-container">
+        <h3 class="caveat">Do you read mobile app's privacy policy?</h3>
+        <h2 class="caveat">If not, let <font color="#5271FF">AI</font> read it for you!</h3>
+    </div>
+    <div class="check-box-container" style ="text-align:center;">
+    <label class="container" style ="color:white">By clicking this check-box, I agree to the privacy policy
+        <input type="checkbox" checked="checked">
+        <span class="checkmark"></span>
+      </label>
+    </div>
+</div>
+<div class="section-2" id="idea">
+    <div class="left-text-container">
+        <h3 class="caveat section-header">The idea...</h3>
+        <p class="section-text">We use large language models to decode obscure privacy policies and provide summarized reports, professional scores, and intuitive visualizations. No more confusion about lengthy and complicated documents, users can learn everything about their personal data usage with PrivaSee. </p>
+    </div>
+    <!-- <div class="grid-container">
+        <div class="grid-item">
+          <img src="{% static 'images/proto_1.gif' %}" alt="Number 1" class="number-image">
+          <p>Text for item 1</p>
+        </div>
+        <div class="grid-item">
+          <img src="{% static 'images/proto_1.gif' %}" alt="Number 2" class="number-image">
+          <p>Text for item 2</p>
+        </div>
+        <div class="grid-item">
+          <img src="{% static 'images/proto_1.gif' %}" alt="Number 3" class="number-image">
+          <p>Text for item 3</p>
+        </div>
+        <div class="grid-item">
+          <img src="{% static 'images/proto_1.gif' %}" alt="Number 4" class="number-image">
+          <p>Text for item 4</p>
+        </div>
+        <div class="grid-item">
+          <img src="{% static 'images/proto_1.gif' %}" alt="Number 5" class="number-image">
+          <p>Text for item 5</p>
+        </div>
+      </div> -->
+    <div class="image-container">
+        <img src = "{% static 'images/sec_2.png' %}" >
+    </div>
+</div>
+<div class="section-3" id="prototype">
+    <div class="left-text-container">
+        <h3 class="caveat section-header">The prototype...</h3>
+        <p class="section-text">Take Doordash as an example</p>
+    </div>
+    <div class="image-container">
+        <div class="row">
+            <div class="column">
+              <img src="{% static 'images/proto_1.gif' %}" alt="Snow" style="width:100%">
+            </div>
+            <div class="column">
+              <img src="{% static 'images/proto_2.gif' %}" alt="Forest" style="width:100%">
+            </div>
+            <div class="column">
+              <img src="{% static 'images/proto_3.gif' %}" alt="Mountains" style="width:100%">
+            </div>
+          </div>
+    </div>
+</div>
+<div class="section-4" id="about">
+    <div class="left-text-container">
+        <h3 class="caveat section-header">Who we are...</h3>
+        <!-- <p class="section-text">Take Doordash as an example</p> -->
+        <div class="section-text clearfix">
+            <div class="box">
+                <img src = "{% static 'images/yanan.png' %}" alt="Yanan Sun">
+                <p style="font-size:0.9em;">Yanan is a dual degree student of Journalism and ​Computer Science at Columbia University. She ​has experience in natural language processing, ​data visualization, and AR/VR. She is interested in ​exploring computational journalism and ​leveraging her programming experience to data ​storytelling.</p>
+            </div>
+            <div class="box">
+                <img src = "{% static 'images/yuqi.png' %}" alt="Yuqi Cheng">
+                <p style="font-size:0.9em;">Yuqi is a M.S. data journalism student at ​Columbia Journalism School. She interned at ​South Metropolis Daily in China, also freelanced ​in opinion writing. Coming from a physics ​background, she is interested in the Sci & Tech ​beat, building tools, or introducing AI for local ​newsrooms.</p>
+            </div>
+        </div>
+    </div>
+    <div class="text-container">
+        <h3>🎉 PrivaSee won the 2024 Columbia Venture Challenge 🎉</h3>
+        <h4>Reach us at <a href="mailto:dataatlarge@gmail.com">dataatlarge@gmail.com</a> to know more</h4>
+    </div>
+
+</div>
+
+<!-- <p>This is the home page</p>
+<img src = "{% static 'images/proto_1.gif' %}" > -->
+
+<!-- {% include 'section.html' %} -->
+<!-- <p>This is the home page</p>
+<img src = "{% static 'images/proto_1.gif' %}" > -->
+{% endblock %}
+
+
+
+
+
+
+<!-- Maintain the same stype -->
+
